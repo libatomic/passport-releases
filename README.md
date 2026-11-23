@@ -6,7 +6,7 @@ This repository holds the builds only. Get them from [Releases](https://github.c
 
 | System | File |
 |---|---|
-| macOS 13 or later, Apple silicon and Intel | `Passport-<version>-universal.dmg` |
+| macOS 13 or later, Apple silicon | `Passport-<version>-arm64.dmg` |
 | Linux x64 | `passport-<version>-linux-amd64.tar.gz` |
 | Linux arm64 | `passport-<version>-linux-arm64.tar.gz` |
 | Windows x64 | `passport-<version>-windows-amd64.zip` |
