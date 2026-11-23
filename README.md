@@ -37,9 +37,17 @@ Put `bin` on your `PATH`, or link `bin/passport` into a folder that is. Linux ne
 
 Trusting Passport's local certificate automatically is macOS only for now. On Linux and Windows, run `passport ca --path` and import that file into your browser, or point your tools at it (`curl --cacert`, `SSL_CERT_FILE`, `NODE_EXTRA_CA_CERTS`).
 
-## Package managers
+## Homebrew
 
-Homebrew (macOS and Linux) and winget or Scoop (Windows) are coming.
+```bash
+# macOS (Apple silicon): the app, with passport on the PATH
+brew install --cask libatomic/tap/passport
+
+# Linux (x64, arm64): the headless command line
+brew install libatomic/tap/passport
+```
+
+Each release updates both. A Windows package manager (Scoop or winget) is coming.
 
 ## Passport Studio
 
