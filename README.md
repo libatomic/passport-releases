@@ -28,14 +28,14 @@ Unpack the archive anywhere and keep its folders together:
 
 ```
 bin/passport           the command line; `passport up --headless` runs Passport
-bin/passport-desktop   the window (a preview on these systems)
+bin/passport-desktop   the window (`passport up` opens it)
 Helpers/               the Passport server
 Resources/             the schema and web apps
 ```
 
 Put `bin` on your `PATH`, or link `bin/passport` into a folder that is. Linux needs WebKitGTK 4.1 for the window; the command line needs nothing extra.
 
-Trusting Passport's local certificate automatically is macOS only for now. On Linux and Windows, run `passport ca --path` and import that file into your browser, or point your tools at it (`curl --cacert`, `SSL_CERT_FILE`, `NODE_EXTRA_CA_CERTS`).
+With Passport running, `passport trust` trusts its local certificate, which is only good for `.localhost` addresses. On Linux it goes into your browsers (Chrome, Chromium and Firefox, with `certutil` from `libnss3-tools` or `nss-tools`) and the system store, which asks for your password. On Windows it goes into your trusted roots after a confirmation. You can also point tools at the file `passport ca --path` prints (`curl --cacert`, `SSL_CERT_FILE`, `NODE_EXTRA_CA_CERTS`).
 
 ## Package managers
 
