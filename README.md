@@ -4,7 +4,9 @@ Passport desktop runs a whole Passport on one computer: the server, the admin an
 
 This repository holds the builds only. Get them from [Releases](https://github.com/libatomic/passport-releases/releases).
 
-The Passport team's full guide (user, command line, agents, CI and developer) is the [Passport desktop guide](https://claude.ai/artifact/16heESVFQoRsA3JAi44Pjh); it opens only for people it has been shared with.
+**[Read the guide](docs/README.md):** install, using Passport, payments and the Stripe simulator, sample data, the command line, AI agents, CI and limits.
+
+The Passport team's internal guide, which also covers the back office, cloning from hosted instances and development, is the [Passport desktop guide](https://claude.ai/artifact/16heESVFQoRsA3JAi44Pjh); it opens only for people it has been shared with.
 
 | System | File |
 |---|---|
