@@ -58,3 +58,20 @@ brew install --cask libatomic/tap/passport-studio
 ```
 
 The macOS and Windows builds are not signed yet. Homebrew clears the macOS quarantine flag for you; from a downloaded `.dmg`, run `xattr -cr "/Applications/Passport Studio.app"` once. Windows asks before the installer's first run.
+
+## atomic-cli
+
+`atomic-cli`, the command line for managing a Passport instance, is published here too. Its releases are tagged `cli-v<version>`.
+
+| System | File |
+|---|---|
+| macOS, Apple silicon / Intel | `atomic-cli_Darwin_arm64.tar.gz` / `atomic-cli_Darwin_x86_64.tar.gz` |
+| Linux arm64 / x64 | `atomic-cli_Linux_arm64.tar.gz` / `atomic-cli_Linux_x86_64.tar.gz` |
+
+Each release has an `atomic-cli_<version>_checksums.txt` file. Homebrew installs the newest full release on macOS and Linux:
+
+```bash
+brew install libatomic/tap/atomic-cli
+```
+
+For a release candidate, unpack the archive and put `atomic-cli` on your `PATH`.
