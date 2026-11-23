@@ -40,3 +40,21 @@ Trusting Passport's local certificate automatically is macOS only for now. On Li
 ## Package managers
 
 Homebrew (macOS and Linux) and winget or Scoop (Windows) are coming.
+
+## Passport Studio
+
+Passport Studio, the desktop app for building, testing and releasing Passport plugins, is published here too. Its releases are tagged `studio-v<version>`; Passport desktop's are `v<version>`.
+
+| System | File |
+|---|---|
+| macOS 12 or later, Apple silicon | `Passport-Studio-<version>-macos-arm64.dmg` |
+| Linux x64 / arm64 | `Passport-Studio-<version>-linux-x64.deb` / `-linux-arm64.deb`, or the `.AppImage`; full releases also have an `.rpm` |
+| Windows x64 / arm64 | `Passport-Studio-<version>-windows-x64-setup.exe` / `-windows-arm64-setup.exe` |
+
+Each file has a `.sha256` beside it. On a Mac, Homebrew installs it:
+
+```bash
+brew install --cask libatomic/tap/passport-studio
+```
+
+The macOS and Windows builds are not signed yet. Homebrew clears the macOS quarantine flag for you; from a downloaded `.dmg`, run `xattr -cr "/Applications/Passport Studio.app"` once. Windows asks before the installer's first run.
