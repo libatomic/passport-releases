@@ -4,6 +4,8 @@ Passport desktop runs a whole Passport on one computer: the server, the admin an
 
 This repository holds the builds only. Get them from [Releases](https://github.com/libatomic/passport-releases/releases).
 
+The Passport team's full guide (user, command line, agents, CI and developer) is the [Passport desktop guide](https://claude.ai/artifact/16heESVFQoRsA3JAi44Pjh); it opens only for people it has been shared with.
+
 | System | File |
 |---|---|
 | macOS 13 or later, Apple silicon | `Passport-<version>-arm64.dmg` |
